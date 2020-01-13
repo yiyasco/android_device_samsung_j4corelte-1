@@ -34,10 +34,9 @@ TARGET_BOOTLOADER_BOARD_NAME := RG13A002KU
 TARGET_NO_BOOTLOADER := true
 
 # Crypto
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
 
 # Kernel
-
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -68,7 +67,6 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_INCLUDE_CRYPTO := true
 TW_MAX_BRIGHTNESS := 255
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_SCREEN_BLANK_ON_BOOT := true
